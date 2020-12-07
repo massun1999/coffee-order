@@ -1,24 +1,35 @@
-# README
+# Messaging APIを使用したLINE チャットボット予約システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 開発環境
 
-Things you may want to cover:
+Ruby2.6.5/Ruby on Rails6.0.3.4/Mysql/git hub/Sequel Pro/Messaging API
 
-* Ruby version
+## 実装した機能
 
-* System dependencies
+- 応答メッセージの送信
+- カルーセルメニューを送信
+- カルーセルメニューを押すと予約情報入力ページへ遷移
+- 予約情報を保存
+- アプリケーション側で予約情報を一覧表示
 
-* Configuration
+## テーブル設計
 
-* Database creation
+### Usersテーブル
 
-* Database initialization
+|Column	 |Type	|Option |
+|--------|------|-------|
+|user_id |string|	      |
 
-* How to run the test suite
+### Lattesテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+|Column	 |Type	|Option |
+|--------|------|-------|
+|name    |string|	      |
+|time    |time  |       |
 
-* Deployment instructions
+### Filtersテーブル
 
-* ...
+|Column	 |Type	|Option |
+|--------|------|-------|
+|name    |string|	      |
+|time    |time  |       |
