@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lattes</h1>
+
+<% @lattes.each do |latte| %>
+  <td><%= latte.name %></td>
+  <td><%= latte.time.strftime('%H:%M') %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lattes.each do |latte| %>
+      <tr>
+        <td><%= link_to 'Show', latte %></td>
+        <td><%= link_to 'Edit', edit_latte_path(latte) %></td>
+        <td><%= link_to 'Destroy', latte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Latte', new_latte_path %>

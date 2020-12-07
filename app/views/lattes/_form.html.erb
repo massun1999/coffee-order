@@ -1,0 +1,22 @@
+<%= form_with(model: @latte, local: true) do |form| %>
+  <% if latte.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(latte.errors.count, "error") %> prohibited this latte from being saved:</h2>
+
+      <ul>
+        <% latte.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <label class="control-label" for="">お名前</label>
+  <%= form.text_field :name, class: 'form-control' %>
+
+  <label class="control-label" for="">お受け取り希望時間</label>
+  <%= form.time_select :time, {}, class: 'form-control' %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Latte < ApplicationRecord
+end
