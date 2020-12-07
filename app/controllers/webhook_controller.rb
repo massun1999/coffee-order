@@ -38,7 +38,7 @@ class WebhookController < ApplicationController
                     title: 'Latte',
                     text: "espresso and steamed milk\n price: ¥500",
                     actions: [
-                      { label: 'Order', type: 'uri', uri: 'https://689652064813.ngrok.io/lattes/new' }
+                      { label: 'Order', type: 'uri', uri: 'https://reserve-systembot1999.herokuapp.com/lattes/new' }
                     ]
                   },
                   {
@@ -46,7 +46,7 @@ class WebhookController < ApplicationController
                     title: 'Pure Over',
                     text: "Filter Coffee\n price: ¥450",
                     actions: [
-                      { label: 'Choise', type: 'uri', uri: 'https://689652064813.ngrok.io//filters/new'}
+                      { label: 'Choise', type: 'uri', uri: 'https://reserve-systembot1999.herokuapp.com/filters/new'}
                     ]
                   }
                 ]
