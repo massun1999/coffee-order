@@ -8,6 +8,8 @@ Messaging APIを用いてLINEのBotから予約注文が可能。
 フォームの入力ができると情報がデータベースへ保存されます。
 保存された情報はアプリケーション側で一覧表示されます。
 
+友達追加URL　https://lin.ee/Vmsrz4k
+
 ## 実装した機能
 
 - Messaging APIの導入
